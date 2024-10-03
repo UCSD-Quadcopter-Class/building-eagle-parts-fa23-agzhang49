@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -186,10 +186,10 @@
 <wire x1="1.5" y1="0.7" x2="-1.5" y2="0.7" width="0.127" layer="21"/>
 <text x="-2.1" y="0.8" size="0.9" layer="25" font="vector">&gt;NAME</text>
 <text x="-2.1" y="-1.7" size="0.9" layer="27" font="vector">&gt;VALUE</text>
-<wire x1="-1.7" y1="0.9" x2="-1.7" y2="-0.9" width="0.05" layer="41"/>
-<wire x1="-1.7" y1="-0.9" x2="1.7" y2="-0.9" width="0.05" layer="41"/>
-<wire x1="1.7" y1="-0.9" x2="1.7" y2="0.9" width="0.05" layer="41"/>
-<wire x1="1.7" y1="0.9" x2="-1.7" y2="0.9" width="0.05" layer="41"/>
+<wire x1="-2.2" y1="1.4" x2="-2.2" y2="-1.4" width="0.05" layer="39"/>
+<wire x1="-2.2" y1="-1.4" x2="2.2" y2="-1.4" width="0.05" layer="39"/>
+<wire x1="2.2" y1="-1.4" x2="2.2" y2="1.4" width="0.05" layer="39"/>
+<wire x1="2.2" y1="1.4" x2="-2.2" y2="1.4" width="0.05" layer="39"/>
 </package>
 <package name="LEDC2012X110N">
 <description>Chip LED, 2.00 X 1.25 X 1.10 mm body
@@ -205,10 +205,10 @@
 <wire x1="-1" y1="-0.7" x2="1" y2="-0.7" width="0.127" layer="21"/>
 <wire x1="1" y1="-0.7" x2="1" y2="0.7" width="0.127" layer="21"/>
 <wire x1="1" y1="0.7" x2="-1" y2="0.7" width="0.127" layer="21"/>
-<wire x1="-1.9" y1="1.1" x2="-1.9" y2="-1.1" width="0.05" layer="39"/>
-<wire x1="-1.9" y1="-1.1" x2="1.9" y2="-1.1" width="0.05" layer="39"/>
-<wire x1="1.9" y1="-1.1" x2="1.9" y2="1.1" width="0.05" layer="39"/>
-<wire x1="1.9" y1="1.1" x2="-1.9" y2="1.1" width="0.05" layer="39"/>
+<wire x1="-2.2" y1="1.4" x2="-2.2" y2="-1.5" width="0.05" layer="39"/>
+<wire x1="-2.2" y1="-1.5" x2="2.2" y2="-1.5" width="0.05" layer="39"/>
+<wire x1="2.2" y1="-1.5" x2="2.2" y2="1.4" width="0.05" layer="39"/>
+<wire x1="2.2" y1="1.4" x2="-2.2" y2="1.4" width="0.05" layer="39"/>
 </package>
 <package name="SOT23">
 <description>3-SOT23, 0.95 mm pitch, 2.37 mm span, 2.92 X 1.30 X 1.12 mm body
@@ -385,7 +385,11 @@
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CREATOR" value="Andy Z"/>
+<attribute name="DIST" value="DigiKey"/>
+<attribute name="DISTPN" value="160-1178-1-ND"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -402,7 +406,11 @@
 <connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CREATOR" value="AndyZ"/>
+<attribute name="DIST" value="DigiKey"/>
+<attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -430,7 +438,11 @@
 <connect gate="G$1" pin="VDDIO" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CREATOR" value="Andy Z"/>
+<attribute name="DIST" value="DigiKey"/>
+<attribute name="DISTPN" value="497-18367-1-ND"/>
+</technology>
 </technologies>
 </device>
 </devices>
